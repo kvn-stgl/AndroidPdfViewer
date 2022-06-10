@@ -1,6 +1,6 @@
 ## Android PDF Viewer
 
-This is a fork of [TalbotGooday/AndroidPdfViewer](https://github.com/TalbotGooday/AndroidPdfViewer). Sinc the original one is not maintained, I forked this and added some customizations I need like [this one](https://github.com/muthuraj57/AndroidPdfViewer/commit/1b5e635f3eea5d9b4e55cdaa26c4c740058b6b5a).
+This is a fork of [TalbotGooday/AndroidPdfViewer](https://github.com/TalbotGooday/AndroidPdfViewer). Since the original one is not maintained, I forked this and added some customizations I need like [this one](https://github.com/muthuraj57/AndroidPdfViewer/commit/1b5e635f3eea5d9b4e55cdaa26c4c740058b6b5a).
 
 ## Installation
 
