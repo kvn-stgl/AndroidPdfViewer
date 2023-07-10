@@ -16,7 +16,7 @@ allprojects {
 ```
 Add the dependency
 ```groovy
-implementation 'io.github.muthuraj57:AndroidPdfViewer:1.0.1'
+implementation 'io.github.muthuraj57:AndroidPdfViewer:1.1.0'
 ```
 
 ---
