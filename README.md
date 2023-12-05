@@ -3,20 +3,20 @@
 This fork was made in order to migrate the library to AndroidX. Add-ons and updates probably will not appear.
 This fork is also published in `mavencentral` in addition to jitpack.
 
-[![Release](https://jitpack.io/v/TalbotGooday/AndroidPdfViewer.svg)](https://jitpack.io/#TalbotGooday/AndroidPdfViewer)
+[![](https://jitpack.io/v/kvn-stgl/AndroidPdfViewer.svg)](https://jitpack.io/#kvn-stgl/AndroidPdfViewer)
 
 Add to _build.gradle_:
 ```groovy
 allprojects {
 	repositories {
 		...
-		mavenCentral()
+		maven { url 'https://jitpack.io' }
 	}
 }
 ```
 Add the dependency
 ```groovy
-implementation 'io.github.muthuraj57:AndroidPdfViewer:1.1.0'
+implementation 'com.github.kvn-stgl:AndroidPdfViewer:Tag'
 ```
 
 ---
