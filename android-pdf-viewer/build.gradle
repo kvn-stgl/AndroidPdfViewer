@@ -41,7 +41,6 @@ publishing {
         release(MavenPublication) {
             groupId = 'com.github.kvn-stgl'
             artifactId = 'AndroidPdfViewer'
-            version = '1.0'
 
             afterEvaluate {
                 from components.release
