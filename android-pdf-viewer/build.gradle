@@ -1,4 +1,7 @@
-apply plugin: 'com.android.library'
+plugins {
+    id 'com.android.library'
+    id 'maven-publish'
+}
 
 android {
     compileSdk 32
@@ -11,9 +14,38 @@ android {
         versionCode 1
         versionName "3.2.0-beta.1"
     }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    publishing {
+        singleVariant("release") {
+            withSourcesJar()
+        }
+    }
 }
 
 dependencies {
-    implementation 'androidx.core:core:1.3.1'
+    implementation 'androidx.core:core:1.8.0'
     api 'com.github.mhiew:pdfium-android:1.9.2'
+}
+
+publishing {
+    publications {
+        release(MavenPublication) {
+            groupId = 'com.github.kvn-stgl'
+            artifactId = 'AndroidPdfViewer'
+            version = '1.0'
+
+            afterEvaluate {
+                from components.release
+            }
+        }
+    }
 }
