@@ -3,9 +3,11 @@ apply plugin: 'com.android.application'
 android {
     compileSdkVersion 29
 
+    namespace 'com.github.barteksc.sample'
+
     defaultConfig {
         applicationId "com.pdfviewer"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 29
         versionCode 3
         versionName "3.0.0"
